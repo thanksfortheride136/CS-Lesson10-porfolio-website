@@ -1,0 +1,47 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 75px; /* Fixed height for navbar */
+    justify-content: flex-start;
+    align-items: center; /* Vertically centers items in navbar */
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+li {
+    display: flex;
+    align-items: center; /* Vertically centers the link within li */
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 23px 20px; /* Increases the clickable area */
+    font-family: 'Montserrat';
+}
+
+a:hover{
+    
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    display: flex;
+    height: 45px;
+    margin-left: 30px;
+}
