@@ -1,78 +1,84 @@
-html, body { 
+/* Global Styles */
+body {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Set text color to white */
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
-    height: 100%;
 }
 
-body{
-    display: flex;
-    flex-direction: column; /* Ensure the body stacks the navbar and content */
-    height: 100%;
-}
-
+/* Navbar Styling */
 .navbar {
     display: flex;
-    width: 100%;
-    height: 75px; /* Fixed height for navbar */
-    justify-content: flex-start;
-    align-items: center; /* Vertically centers items in navbar */
-}
-
-ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-}
-
-li {
-    display: flex;
-    align-items: center; /* Vertically centers the link within li */
-}
-
-li a {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
     color: white;
-    padding: 23px 20px; /* Increases the clickable area */
-    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: 500;
 }
 
-a:hover{
-    border-bottom: 1px solid white;
+.navbar .logo img {
+    height: 50px;
 }
 
-.logo{
-    display: flex;
-    height: 45px;
-    margin-left: 30px;
-}
-
-/*-----------------Classes page CSS-----------------*/
+/* Topics Section Styling */
 .topics-content-wrapper {
-    flex-grow: 1; /* Takes up the remaining space in body */
     display: flex;
-    border: 1px solid green;
-    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .topics-container {
     display: flex;
-    border: 1px solid red;
-    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    gap: 20px; /* Spacing between each item */
     justify-content: center;
-    width: 100%; /* Set width to 100% of the container */
-    height: 100%;
+    width: 100%; /* Ensure the container spans the full width */
 }
 
-.topics{
-    display: flex;
-    width: 250px;
-    height: 250px;
-    background-color: green;
-    margin: 50px;
+.topics {
+    flex: 1 1 300px; /* Flexible width with a base of 300px */
+    max-width: 300px; /* Maximum width for each box */
+    min-width: 200px; /* Minimum width for each box */
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid #444; /* Adjusted border color for dark background */
+    background-color: #333; /* Set background color for topics */
+    color: #fff; /* Set text color to white */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    transition: transform 0.3s ease; /* Hover effect animation */
+}
+
+.topics:hover {
+    transform: translateY(-10px); /* Adds a hover effect for interactivity */
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .topics {
+        flex: 1 1 45%; /* More items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .topics {
+        flex: 1 1 100%; /* Single column on small screens */
+    }
 }
