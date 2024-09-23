@@ -2,6 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #24252A;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column; /* Ensure the body stacks the navbar and content */
+    height: 100%;
 }
 
 .navbar {
@@ -36,7 +43,6 @@ li a {
 }
 
 a:hover{
-    
     border-bottom: 1px solid white;
 }
 
@@ -44,4 +50,29 @@ a:hover{
     display: flex;
     height: 45px;
     margin-left: 30px;
+}
+
+/*-----------------Classes page CSS-----------------*/
+.topics-content-wrapper {
+    flex-grow: 1; /* Takes up the remaining space in body */
+    display: flex;
+    border: 1px solid green;
+    width: 100%;
+}
+
+.topics-container {
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Set width to 100% of the container */
+    height: 100%;
+}
+
+.topics{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    margin: 50px;
 }
