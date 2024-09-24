@@ -68,6 +68,11 @@ a:hover{
     transition: transform 0.3s ease; /* Hover effect animation */
 }
 
+.topics a{
+    text-decoration: none;
+    color: white;
+}
+
 .topics:hover {
     transform: translateY(-10px); /* Adds a hover effect for interactivity */
     background-color: #444; /* Slightly lighter on hover */
