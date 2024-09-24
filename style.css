@@ -1,7 +1,5 @@
 /* Global Styles */
-*{
-    border: 1px solid red;
-}
+
 body {
     background-color: #222; /* Dark background color */
     color: #fff; /* Set text color to white */
@@ -101,10 +99,11 @@ a:hover{
 #help-block{
     height: 250px;
     padding: 0;
+    margin: 1px;
 }
 
 .help-thumbnail{
-    border: 1px solid red;
+    
     height: 75%;
     width: 100%;
     overflow: hidden;
