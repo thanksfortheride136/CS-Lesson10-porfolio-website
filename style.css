@@ -1,11 +1,13 @@
 /* Global Styles */
 
-body {
+body{
     background-color: #222; /* Dark background color */
     color: #fff; /* Set text color to white */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    border: 1px solid red;
 }
 
 /* Navbar Styling */
@@ -40,77 +42,32 @@ a:hover{
     height: 50px;
 }
 
-/* Topics Section Styling */
-.topics-content-wrapper {
+.topics-content-wrapper{
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Ensure child divs align to the top */
-    margin-top: 50px;
-    min-height: 100vh; /* Ensure it takes at least the full height of the viewport, but can expand */
-    width: 100%; /* Ensure it spans the full width */
-    overflow: visible; /* Allow the container to grow with content */
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid green;
 }
 
-.topics-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping of items */
-    gap: 20px; /* Spacing between each item */
+.topics-container{
+    flex-wrap: wrap;
+    align-content: start; /*this styles the multi-axis because were using flex wrap*/
     justify-content: center;
-    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    border: 1px solid yellow;
+    width: 100vw;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 15px;
 }
 
-.topics {
-    flex: 1 1 300px; /* Flexible width with a base of 300px */
-    max-width: 300px; /* Maximum width for each box */
-    min-width: 200px; /* Minimum width for each box */
-    padding: 20px;
+.topics{
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+    background-color: white;
+    gap: 10px;
+    color: black;
     text-align: center;
-    margin: 10px 0;
-    border: 1px solid #444; /* Adjusted border color for dark background */
-    background-color: #333; /* Set background color for topics */
-    color: #fff; /* Set text color to white */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-    transition: transform 0.3s ease; /* Hover effect animation */
-}
-
-.topics a{
-    text-decoration: none;
-    color: white;
-}
-
-.topics:hover {
-    transform: translateY(-10px); /* Adds a hover effect for interactivity */
-    background-color: #444; /* Slightly lighter on hover */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .topics {
-        flex: 1 1 45%; /* More items per row on medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .topics {
-        flex: 1 1 100%; /* Single column on small screens */
-    }
-}
-
-#help-block{
-    height: 250px;
-    padding: 0;
-    margin: 1px;
-}
-
-.help-thumbnail{
     
-    height: 75%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.help-thumbnail img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
