@@ -1,6 +1,4 @@
-*{
-    border: 1px solid red;
-}
+
 
 body {
     background-color: #222; /* Dark background color */
@@ -127,32 +125,35 @@ a{
     flex-direction: column;
     height: 85vh;
     width: 100vw;
-    border: 5px solid green;
     justify-content: center;
     align-items: center;
 }
 
 .uke-heading-container{
-    background-color: red;
+    display: flex;
     height: 50px;
-    width: 300px;
+    width: 30vw;
     margin: 1px;
-    border: 2px solid yellow;
-}
-
-.uke-video-container{
-    background-color: red;
-    height: 50px;
-    width: 300px;
-    margin: 1px;
-    border: 2px solid yellow;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .uke-buttons-container{
-    background-color: red;
-    margin: 1px;
+    display: flex;
+    justify-content: space-between;
     height: 50px;
-    width: 300px;
-    border: 2px solid yellow;
+    width: 34vw;
+    margin-top: 10px;;
 }
-.
+
+.uke-buttons-container button{
+    display: flex;
+    height: 45px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
