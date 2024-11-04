@@ -136,14 +136,16 @@ a{
     margin: 1px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+}
+#stepHeading{
+    margin-bottom: 5px;
 }
 
 .uke-buttons-container{
     display: flex;
     justify-content: space-between;
     height: 50px;
-    width: 34vw;
+    width: 42vw;
     margin-top: 10px;;
 }
 
